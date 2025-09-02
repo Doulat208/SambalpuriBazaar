@@ -5,19 +5,18 @@ A full-stack **e-commerce platform** for Sambalpuri handloom clothing. Customers
 ---
 
 ## Project Structure
-
+```text
 SambalpuriBazaar
 │
 ├── Backend # Spring Boot project
-│ ├── src
-│ ├── pom.xml
-│ └── ...
+│   ├── src
+│   ├── pom.xml
+│   └── ...
 │
 └── Frontend # React + Vite project
-├── src
-├── package.json
-└── vite.config.js
-
+    ├── src
+    ├── package.json
+    └── vite.config.js
 ---
 
 ## 🚀 Tech Stack
@@ -64,14 +63,14 @@ SambalpuriBazaar
 
 ### 1. Backend (Spring Boot)
 
-cd Backend
-mvn spring-boot:run
+- cd Backend
+- mvn spring-boot:run
 
 
 ### 2. Frontend (React + Vite)
 
-cd Frontend
-npm install
+- cd Frontend
+- npm install
 npm run dev
 
 
