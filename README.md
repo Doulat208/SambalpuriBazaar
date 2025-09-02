@@ -17,8 +17,8 @@ SambalpuriBazaar
     ├── src
     ├── package.json
     └── vite.config.js
+```
 ---
-
 ## 🚀 Tech Stack
 
 **Frontend (React + Vite)**  
@@ -62,15 +62,15 @@ SambalpuriBazaar
 ## 📌 How to Run
 
 ### 1. Backend (Spring Boot)
-
-- cd Backend
-- mvn spring-boot:run
-
+```baash
+cd Backend
+mvn spring-boot:run
+```
 
 ### 2. Frontend (React + Vite)
-
-- cd Frontend
-- npm install
+```bash
+cd Frontend
+npm install
 npm run dev
-
+```
 
