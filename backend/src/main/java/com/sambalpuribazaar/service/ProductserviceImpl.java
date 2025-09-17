@@ -1,5 +1,6 @@
 package com.sambalpuribazaar.service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,10 +15,12 @@ public class ProductserviceImpl implements ProductService{
 
     @Autowired
     private ProductRepository productRepository;
+    
 
     @Override
-    public Product addProduct(ProductDTO product) {
-        return productRepository.save(product);
+    public Product addProduct(Product product) {
+        product.setCreatedAt(LocalDateTime.now());
+        return productRepository.save( product);
     }
 
     @Override

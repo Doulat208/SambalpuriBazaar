@@ -52,4 +52,5 @@ public class Product {
     private boolean isNewarrival = false;
     
     private LocalDateTime createdAt;
+    
 }

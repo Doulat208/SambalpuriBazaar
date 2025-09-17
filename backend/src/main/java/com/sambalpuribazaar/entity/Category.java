@@ -6,6 +6,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.mongodb.lang.NonNull;
 
 import lombok.AllArgsConstructor;
@@ -21,15 +22,16 @@ public class Category {
     @Id
     private String id;
 
-    @NonNull
+    // @NonNull
     private String name;
     
-    @NonNull
+    // @NonNull
     private String code;
 
     private String description;
 
     @DBRef
+    @JsonIgnore
     private List<CategoryType> categorytype;
 
 }

@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.sambalpuribazaar.dto.ProductDTO;
 import com.sambalpuribazaar.entity.Product;
 import com.sambalpuribazaar.service.ProductService;
 
@@ -32,8 +31,8 @@ public class ProductController {
     }
 
     @PostMapping
-    public ResponseEntity<Product> createProduct(@RequestBody ProductDTO productDto){
-        Product myProduct = productService.addProduct(productDto);
+    public ResponseEntity<Product> createProduct(@RequestBody Product product){
+        Product myProduct = productService.addProduct(product);
         if(myProduct != null){
             return new ResponseEntity<>(myProduct, HttpStatus.OK);
         }
